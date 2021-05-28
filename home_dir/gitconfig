@@ -2,7 +2,7 @@
 	helper = cache --timeout=3600
 [core]
 	autocrlf = input
-	excludesfile = ~/.gitignore_global
+	excludesfile = /home/lernie/.gitignore_global
 [push]
 	default = simple
 [filter "lfs"]
@@ -14,9 +14,8 @@
 [alias]
 	ldiff = difftool -t latex
 [user]
-	name = Brian D. Weitzner
-	email = bweitzner@lyellbio.com
-	signingkey = 09E370D51B097A3B
+	name = Bobby Langan
+	email = robert.langan@gmail.com
 
 [commit]
 	gpgsign = false

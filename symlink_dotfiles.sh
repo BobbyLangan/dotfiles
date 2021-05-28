@@ -11,8 +11,8 @@ dir=`pwd`/home_dir                 # dotfiles directory
 old_dir=$HOME/dotfiles_old         # backup directory for old dotfiles
 pymol_scripts_dir=`pwd`/pymol_scripts # absolute path to pymol_scripts
 
-zsh_theme=verbose.zsh-theme        # zsh theme file
-zsh_dir=$HOME/.oh-my-zsh/custom    # oh my zsh installation directory
+zsh_theme=steeef.zsh-theme        # zsh theme file
+zsh_dir=$HOME/.oh-my-zsh/custom   # oh my zsh installation directory
 
 # Move extant dotfiles to $old_dir, then create symlinks
 # This function takes three arguments:
