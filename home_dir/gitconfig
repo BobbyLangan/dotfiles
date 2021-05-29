@@ -15,7 +15,7 @@
 	ldiff = difftool -t latex
 [user]
 	name = Bobby Langan
-	email = robert.langan@gmail.com
+	email = rlangan@outpacebio.com
 
 [commit]
 	gpgsign = false
