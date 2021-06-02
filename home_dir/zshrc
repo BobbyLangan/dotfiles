@@ -117,3 +117,5 @@ show_conda_env() {
   fi
 }
 PS1='$(show_conda_env)'$PS1
+
+eval "$(direnv hook zsh)"
