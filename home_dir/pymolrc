@@ -72,6 +72,7 @@ run ~/pymol_scripts/PDBinfo.py
 run ~/pymol_scripts/color_h.py
 run ~/pymol_scripts/pymol_brian.py
 run ~/pymol_scripts/obj_arrows.py
+run ~/pymol_scripts/color_lockr.py
 
 aaindex.init("~/pymol_scripts/aaindex")
 
