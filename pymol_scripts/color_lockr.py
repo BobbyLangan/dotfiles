@@ -1,10 +1,18 @@
 from pymol import cmd, util
+import re
 
 
 def color_lockr(sequence):
     for obj in cmd.get_names():
-        obj_sequence = cmd.get_fastastr(obj)
+        fasta_preformat = cmd.get_fastastr(obj)
+        obj_sequence = ""
+        for line in fasta_preformat.splitlines():
+            if re.match("^>", line):
+                continue
+            obj_sequence += line
+
         loc = obj_sequence.find(sequence)
+        print(obj, obj_sequence, loc)
         if loc < 0:
             continue
 
