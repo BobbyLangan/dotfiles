@@ -64,7 +64,7 @@ else
     add_to_path /opt/local/libexec/gnubin/
     add_to_path /opt/local/bin
     add_to_path /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
-    add_to_path $HOME/.conda/envs/pymol/bin
+    #add_to_path $HOME/.conda/envs/pymol/bin
 fi
 
 export PATH=$PATH_PREFIX:$PATH
@@ -117,5 +117,9 @@ show_conda_env() {
   fi
 }
 PS1='$(show_conda_env)'$PS1
+
+ROSETTA_USERNAME=outpace2020
+ROSETTA_PASSWORD=tek*vnmt
+DOCKER_AWS=229556348510.dkr.ecr.us-west-2.amazonaws.com
 
 eval "$(direnv hook zsh)"

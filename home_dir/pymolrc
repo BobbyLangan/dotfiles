@@ -27,7 +27,7 @@ alias remove_npol_h, remove (h. and (e. c extend 1))
 # set fetch_path, ~/pdbs
 
 ## Ray tracing
-set ray_trace_mode, 0
+## set ray_trace_mode, 0 (outpace styleguide)
 # set ray_trace_fog, 0
 set ray_opaque_background, 0
 # set ray_shadow, 0
@@ -48,6 +48,7 @@ from pymol import cmd
 import sys
 
 run ~/Rosetta/tools/antibody/colorcdrs.py
+run https://raw.githubusercontent.com/cbalbin-bio/pymol-color-alphafold/master/coloraf.py
 
 alias ribbonize,\
     hide; show cartoon; set cartoon_fancy_helices, 1; \
@@ -111,7 +112,15 @@ alias pick3, pdblistfilecyclerlite pick3.list; set_cycler_command 'stix; zoom ch
 alias bbo, hide all; show sticks, name Ca+C+O+N+CA
 alias hetsee, hide all; show cartoon; alignto asym*; zoom; select interfaceA, asym and chain A within 10 of (asym and chain B); select interfaceB, asym and chain B within 10 of (asym and chain A); select interfaceAA, not hydro within 3 of interfaceA; select interfaceBB, not hydro within 3 of interfaceB; show lines, interfaceAA; show lines, interfaceBB; select interfaceOri, resi and asym and interfaceAA or asym and interfaceBB; show sticks, interfaceOri; disable interface*; disable *_2_S* or *_3_S* or *_4_S* or or *_5_S*
 
-
+set_color tech1, [78, 186, 176]#4EBAB0;
+set_color tech2, [10, 146, 163]#0A92A3;
+set_color tech2_light, [42, 190, 211]#2ABED3;
+set_color tech3, [48, 91, 114]#305B72;
+set_color tech3_dark, [24, 58, 77]#183a4d;
+set_color coral, [254, 74, 74]#FE4A4A;
+set_color op_blue, [13, 93, 157]#0D5D9D;
+alias opb-style, reinitialize settings; bg white; set light_count, 2; set cartoon_oval_width, 0.4; set cartoon_loop_radius, 0.4; set cartoon_rect_width, 0.4; set ray_trace_mode, 1; set ray_opaque_background, 0;
+opb-style
 
 #######################################################
 
