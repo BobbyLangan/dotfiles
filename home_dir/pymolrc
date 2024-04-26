@@ -48,7 +48,6 @@ from pymol import cmd
 import sys
 
 run ~/Rosetta/tools/antibody/colorcdrs.py
-run https://raw.githubusercontent.com/cbalbin-bio/pymol-color-alphafold/master/coloraf.py
 
 alias ribbonize,\
     hide; show cartoon; set cartoon_fancy_helices, 1; \
@@ -74,6 +73,8 @@ run ~/pymol_scripts/color_h.py
 run ~/pymol_scripts/pymol_brian.py
 run ~/pymol_scripts/obj_arrows.py
 run ~/pymol_scripts/color_lockr.py
+run ~/pymol_scripts/coloraf.py
+run ~/pymol_scripts/colorimmunebuilder.py
 
 aaindex.init("~/pymol_scripts/aaindex")
 
