@@ -102,8 +102,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# enable directory-based environment activation and switching
-eval "$(direnv hook zsh)"
 
 # set up zsh to include the current environment in the prompt
 # whether direnv is switching envs or if ens are being changed
@@ -121,5 +119,3 @@ PS1='$(show_conda_env)'$PS1
 ROSETTA_USERNAME=outpace2020
 ROSETTA_PASSWORD=tek*vnmt
 DOCKER_AWS=229556348510.dkr.ecr.us-west-2.amazonaws.com
-
-eval "$(direnv hook zsh)"
