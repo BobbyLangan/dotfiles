@@ -1,1 +1,5 @@
 changeps1: false
+channels: 
+- https://conda.rosettacommons.org
+- anaconda
+- conda-forge
